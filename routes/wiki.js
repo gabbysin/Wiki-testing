@@ -118,6 +118,7 @@ router.get('/:urlTitle/similar', function (req, res, next) {
 
         })
         .then(function (similarPages) {
+            console.log(similarPages.length);
             res.render('index', {
                 pages: similarPages
             });
